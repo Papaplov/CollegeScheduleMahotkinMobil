@@ -7,8 +7,8 @@ class ScheduleRepository(private val api: ScheduleApi) {
     suspend fun loadSchedule(group: String): List<ScheduleByDateDto> {
         return api.getSchedule(
             groupName = group,
-            start = "2026-01-12",
-            end = "2026-01-17"
+            start = "2026-03-16",
+            end = "2026-04-15"
         )
     }
 }
